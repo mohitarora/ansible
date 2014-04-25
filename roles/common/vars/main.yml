@@ -1,6 +1,7 @@
 ---
 
 users:
-  - { name: 'marora', groups: 'wheel' }
+  - name: marora
+    groups: wheel
     authorized:
       - public_keys/marora.pub
