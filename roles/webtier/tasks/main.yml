@@ -1,0 +1,8 @@
+---
+# file: roles/webtier/tasks/main.yml
+
+- name: Install HTTPD
+  yum: name={{ item }} state=latest
+  with_items:
+    - httpd
+    - httpd-tools
