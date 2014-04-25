@@ -5,7 +5,17 @@
   yum: name=* state=latest
 
 - name: Install the common packages
-  yum: name={{ item }} state=installed
+  yum: name={{ item }} state=latest
   with_items:
-   - wget
-   - git
+    - wget
+    - git
+
+- name: Add ssh users
+  user: name={{ item.name }} groups={{ item.groups }}
+  with_items: users
+
+- name: Add ssh user keys
+  authorized_key: "user={{ item.0.name }} key='{{ lookup('file', item.1) }}'"
+  with_subelements:
+     - users
+     - authorized

@@ -1,0 +1,4 @@
+users:
+  - { name: 'marora', groups: 'wheel' }
+    authorized:
+      - /tmp/alice/onekey.pub
