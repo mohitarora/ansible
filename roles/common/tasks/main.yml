@@ -1,0 +1,11 @@
+---
+# file: roles/common/tasks/main.yml
+
+- name: upgrade all packages
+  yum: name=* state=latest
+
+- name: Install the common packages
+  yum: name={{ item }} state=installed
+  with_items:
+   - wget
+   - git
