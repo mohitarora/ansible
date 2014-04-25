@@ -1,0 +1,4 @@
+# Here are variables required for all servers
+
+remote_user: root
+
