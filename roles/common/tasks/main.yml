@@ -15,7 +15,7 @@
   with_items: users
 
 - name: Add ssh user keys
-  authorized_key: "user={{ item.0.name }} key='{{ lookup('file', item.1) }}'"
+  authorized_key: user={{ item.0.name }} key="{{ lookup('file', item.1) }}"
   with_subelements:
      - users
      - authorized
