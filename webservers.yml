@@ -2,7 +2,7 @@
 # file: webservers.yml
 - hosts: webservers
   remote_user: root
-  gather_facts: no
+  gather_facts: False
 
   roles:
     - common
