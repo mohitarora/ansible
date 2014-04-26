@@ -12,15 +12,18 @@
 
 - name: Disallow root SSH access
   lineinfile: dest=/etc/ssh/sshd_config regexp=^[#]?PermitRootLogin line='PermitRootLogin no'
-  notify: restart sshd
+  notify:
+    - restart sshd
 
 - name: Disallow SSH password authentication
   lineinfile: dest=/etc/ssh/sshd_config regexp=^PasswordAuthentication line='PasswordAuthentication no'
-  notify: restart sshd
+  notify:
+    - restart sshd
 
 - name: Disallow SSH GSS API authentication
   lineinfile: dest=/etc/ssh/sshd_config regexp=^GSSAPIAuthentication line='GSSAPIAuthentication no'
-  notify: restart sshd
+  notify:
+    - restart sshd
 
 - name: Add ssh users
   user: name={{ item.name }} groups={{ item.groups }}
