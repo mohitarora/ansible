@@ -11,7 +11,7 @@
     - git
 
 - name: Disallow root SSH access
-  lineinfile: dest=/etc/ssh/sshd_config regexp=^PermitRootLogin line='PermitRootLogin no'
+  lineinfile: dest=/etc/ssh/sshd_config regexp=^[#]?PermitRootLogin line='PermitRootLogin no'
   notify: restart sshd
 
 - name: Disallow SSH password authentication
