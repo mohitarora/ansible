@@ -1,7 +1,7 @@
 ---
 
 users:
-  - name: marora
-    groups: wheel
+  - name: admin
+    groups: admin
     authorized:
-      - public_keys/marora.pub
+      - public_keys/admin.pub
