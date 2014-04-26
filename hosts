@@ -1,3 +1,4 @@
-[webservers]
+# Inventory File. This will be dynamically generated in cloud environment
 
+[webservers]
 localhost   ansible_connection=local
