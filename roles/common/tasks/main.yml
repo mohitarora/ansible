@@ -10,6 +10,9 @@
     - wget
     - git
 
+- name: Change root password
+  user: name=root password={{ root_password }}
+
 - name: Disallow root SSH access
   lineinfile: dest=/etc/ssh/sshd_config regexp=^[#]?PermitRootLogin line='PermitRootLogin no'
   notify:
