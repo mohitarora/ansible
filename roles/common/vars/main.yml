@@ -2,6 +2,6 @@
 
 users:
   - name: admin
-    groups: admin
+    groups: wheel
     authorized:
       - public_keys/admin.pub
