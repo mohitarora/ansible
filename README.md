@@ -11,5 +11,4 @@ ansible-playbook -i hosts site.yml
 Pre-requisites
 ==============
 
-ansible
-python-setuptools
+yum -y install ansible python-setuptools
