@@ -1,4 +1,8 @@
 # Here are variables required for all servers
 
+# pip install passlib
+# Once the library is ready, SHA512 password values can then be generated
+# python -c "from passlib.hash import sha512_crypt; print sha512_crypt.encrypt('<password>')"
+
 root_password: $6$rounds=100000$hXen21zF3LpxcbZN$OH0GHL1esA2O2TQZ797zgrj58hYbVXqIB6xwfJE2vW6tdoP56GsEomPVea.snhW1Aqcgs6aBj31wd3yHipIMw0
 
