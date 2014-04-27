@@ -1,4 +1,4 @@
 # Here are variables required for all servers
 
-root_password: 334117dfb68800cfa7d71040b2ea0b99c370d3358a07250d3afdcbd7acd4b909cf00d19c65462dbf5e4aee7ca17f9d79162b45e0eb1f12ae62b25b1125ae7011
+root_password: $6$rounds=100000$hXen21zF3LpxcbZN$OH0GHL1esA2O2TQZ797zgrj58hYbVXqIB6xwfJE2vW6tdoP56GsEomPVea.snhW1Aqcgs6aBj31wd3yHipIMw0
 
