@@ -2,7 +2,7 @@
 # file: webservers.yml
 - hosts: webservers
   remote_user: root
-  gather_facts: False
+  gather_facts: no
 
   roles:
     - webtier
