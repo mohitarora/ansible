@@ -29,7 +29,7 @@
     - restart sshd
 
 - name: Add ssh users
-  user: name={{ item.name }} groups={{ item.groups }}
+  user: name={{ item.name }} groups={{ item.groups }} shell=/bin/bash
   with_items: users
 
 - name: Add ssh user keys
