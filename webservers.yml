@@ -5,5 +5,4 @@
   gather_facts: False
 
   roles:
-    - common
     - webtier
