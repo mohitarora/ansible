@@ -1,0 +1,5 @@
+---
+# file: roles/common/defaults/main.yml
+# if not overridden in inventory or as a parameter, this is the value that will be used
+
+root_password: $6$rounds=100000$hXen21zF3LpxcbZN$OH0GHL1esA2O2TQZ797zgrj58hYbVXqIB6xwfJE2vW6tdoP56GsEomPVea.snhW1Aqcgs6aBj31wd3yHipIMw0
